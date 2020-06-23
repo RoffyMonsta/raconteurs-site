@@ -1,0 +1,628 @@
+/* Під'єднав шрифт */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+/* Для всього */
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+/*Стилі для всього документу*/
+html,body{
+background-color: black;
+margin: 0;
+padding: 0;
+color: black;
+height: 100%;
+width: 100%;
+font-family: 'Noto Sans', sans-serif;
+overflow-x: hidden;
+}
+/*----------------------------- Хедер ------------------------*/
+header{
+background: #fce111;
+text-align: center;
+width: 100%;
+}
+/*Для всіх контейнерів-обмежувачів*/
+.container{
+width: 70%;
+margin: 0 auto;
+}
+/*Для лого і меню флекс*/
+.top{ 
+background: #fce111;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+/*Стилі для назви сайту*/
+#header_name{
+text-align: center;
+font-size: 250%;
+}
+/*Для всіх меню*/
+.menu{
+padding: 5% 0px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin:0px auto;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-ms-flex-line-pack: center;
+align-content: center;
+font-weight: 300;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+list-style: none;
+}
+/*Для випадаючого меню*/
+.toggle-button{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 3% 0;
+}
+/*Чекбокс*/
+#menu-checkbox{
+    display: none;
+}
+/*Щоб посилання виглядали звичайно*/
+.link{
+    color: black;
+    text-decoration: none;
+}
+/*Наведення на посилання*/
+.link:hover{
+    color: red;
+}
+
+ /* ----------------------Main в Головна сторінка ------------------ */
+main{
+    text-align: center;
+    color: yellow;
+    padding-bottom: 2%;
+}
+/*---------------------------------Для слайдера------------------------*/
+#blockfor-slider {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+#slides {
+  position: relative;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+ }
+ .slide1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+ }
+ .showing {
+  opacity: 1;
+  z-index: 2;
+ }
+ .slide1 {
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #333;
+ }
+ .slide1:nth-of-type(1) {
+  background: url(../img/1.jpg) no-repeat center;
+ }
+ .slide1:nth-of-type(2) {
+  background: url(../img/2.jpg) no-repeat center;
+ }
+ .slide1:nth-of-type(3) {
+  background:url(../img/3.jpg) no-repeat center;
+ }
+ .slide1:nth-of-type(4) {
+  background: url(../img/4.jpg) no-repeat center;
+ }
+/*Флекс блок в головній частині*/
+.mflex{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+}
+/* Квитки-віджет */
+.tickets{
+-ms-flex-item-align: stretch;
+-ms-grid-row-align: stretch;
+align-self: stretch;
+}
+/*Шрифти для всіх новин*/
+.news{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Заголовки*/
+.article{
+   margin: 5%;
+    background-color: #fce111;
+    color: black;
+    font-size: 150%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*Назви статтей*/
+.name{
+    
+    font-size: 150%;
+    font-weight: 700;
+    margin: auto;
+}
+/*Основний текст*/
+.text{
+    
+font-size: 100%;
+    color: #D8DB40;
+font-weight: 400;
+text-decoration: none;
+}
+/*Горизонтальні лінії*/
+.news .hr{
+    color: #fce111;
+    background-color: #fce111;
+    height: 4px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0;
+}
+/*------------------------------Для футера----------------------*/
+footer{
+    padding-top: 1%;
+    background-color: #fce111;
+    text-align: center;
+    width: 100%;
+    
+    height: auto;
+}
+/*Флекс-блок*/
+.footer.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    
+}
+/*Горизональна лінія в футері*/
+.footer.hr{
+    
+        
+    border: 0;
+    color: black;
+    background-color: black;
+    height: 4px;
+    
+}
+/*Кінцева назва сайту*/
+.fname {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    width: 25%;
+    background-color: black;
+    font-size: 160%;
+    color: #fce111;
+    font-weight: 500;
+    font-family: fantasy;
+    
+}
+/*Розмір меню в футері*/
+.footer.menu{
+    width: 150%;
+    
+}
+/*Ім'я створювача*/
+#outro{
+     font-weight: 500;
+    font-family: fantasy;
+    font-size: 100%;
+}
+/*----------------------------------ПРО ГУРТ----------------------------*/
+/*Назва сторінки*/
+.about_top_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+/*Горизональні лінії назви*/
+.about_top_flex hr{
+    color: #fce111;
+    background-color: #fce111;
+    height: 4px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0;
+    width: 35%;
+}
+/*Для тексту назви*/
+.about_about{
+    padding: 3% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%; 
+}
+/*Картинка */
+.image_about img{  
+width: 70%;
+    height: 50%;
+    padding-bottom: 3%;
+}
+/*Контент в флекс*/
+.about_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+/*Про гурт текст*/
+.about_text{
+   width: 50%;
+    border-radius: 30px 30px 30px 30px;
+border: 9px dotted #fce111;
+    font-size: 18px;
+}
+.about_text p{
+    margin: 4%;    
+}
+/*Гугл-мапи */
+.about_widgets{
+    
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+#pano, #map{
+   width: 45%;
+    height: 70%;
+    padding: 0 2%;
+}
+/*Для соціальних посилань*/
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 90px;
+  text-align: center;
+}
+.socialIcons li {
+  display: inline-block;
+  margin: auto 10px;
+    
+}
+.socialIcons li a {
+  text-align: center;
+  display: inline-block;
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  color: #fff5b2;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(-30deg);
+          transform: rotateY(-30deg);
+  text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+}
+.socialIcons li a:hover {
+  color: #fce111;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+}
+/*------------------------------ГАЛЕРЕЯ---------------------------*/
+/*Слайдер*/
+#block-for-slider {
+  width: 70%;
+  margin: 0 auto;
+  
+}
+#viewport2 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+#slidewrapper2 {
+  position: relative;
+  width: calc(100% * 10);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: calc(100%/10);
+  list-style: none;
+  display: inline;
+  float: left;
+}
+.slide-img {
+  width: 100%;
+}
+#prev-btn, #next-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: calc(50% - 25px);
+}
+#prev-btn:hover, #next-btn:hover {
+  cursor: pointer;
+}
+#prev-btn {
+  left: 20px;
+}
+#next-btn {
+  right: 20px;
+}
+#nav-btns {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.slide-nav-btn {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 3px;
+}
+.slide-nav-btn:hover {
+  cursor: pointer;
+}
+/*-----------------------------МУЗИКА-----------------------*/
+/*Основний флекс-блок*/
+.music_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+/*флекс-блок для відео*/
+.music_videos{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+/*Флекс-блок для нижньої частини контенту*/
+.music_music{
+    padding-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+/*Популярне флекс*/
+.music_popular{
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+/*Інші треки флекс*/
+.music_also{
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+/*саундклауд віджет*/
+iframe {
+    padding: 2%;
+}
+/*-------------------------Адаптація під мобільну версію--------------------*/
+@media screen and ( max-width: 700px){
+    #header_name{
+        display: none;
+    }
+    #header_menu{
+        display:none;
+    }
+    #header_menu li{
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    #header_menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+    }
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] #header_menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+    #header_menu{
+        position:relative;
+    }
+    .fname p{
+        font-size: 12px;
+    }
+    .mflex{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer .menu {
+        font-size: 10px;
+    }
+     .about_content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+    }
+    .about_text{
+        width: 100%;
+    }
+    .about_widgets{
+        display: none;
+    }
+    .about_about h1{
+        font-size: 14px;
+    }
+    #prev-btn, #next-btn {
+      width: 20px;
+      height: 20px;
+    }
+    .slide-nav-btn{
+      width: 5px;
+      height: 5px;
+    }
+    
+    .music_videos, .music_music{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .music_popular, .music_also{
+        width: 100%;
+    }
+}

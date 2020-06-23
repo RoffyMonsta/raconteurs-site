@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <!--Під'єдную кодування-->
+    <meta charset="UTF-8">
+    <!--Назва сторінки-->
+    <title>Raconteurs</title>
+    <!--Під'єдную CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Встановлюю іконку сайту-->
+    <link rel="shortcut icon" type="img/x-icon" href="./img/icons/favicon.ico">
+    <!--Адаптую сайт-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<!--Хедер-->
+  <header>
+  <!--Блок що обмежує все в центрі-->
+  <div class="container">
+  <!--Блок для лого та назви сайту-->
+  <div class="header top">
+  <!--Лого-->
+   <div class="header logo">
+        <a href="index.html"><img  src="./img/icons/logo.png" alt="Raconteurs" ></a>
+    </div>
+    <!--Назва сайту-->
+    <div id="header_name">
+        <h1>The Raconteurs</h1>
+    </div>
+    </div>  
+    <!-- Меню -->
+    <!--Чекбокс для адаптації випадаючого меню моб. версії-->
+    <input type="checkbox" id="menu-checkbox">
+    <!--Блок з меню-->
+    <nav role="navigation">
+     <!--Випадаючий блок-->
+     <label for="menu-checkbox" class="toggle-button" data-open = "Меню" data-close = "Закрити" onclick></label>
+       <ul class="header menu"  id="header_menu">
+       <li><a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a></li>
+       <li><a class="link" href="about.html">ПРО ГУРТ</a></li>
+       <li><a class="link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+       <li><a class="link" href="music.html">МУЗИКА</a></li>
+       </ul>
+    </nav>
+    </div>
+    </header>
+    <!--Головна частина -->
+    <main>
+   <div class="container">
+      <div class="music_flex"> 
+      <!--Назва сторінки-->
+       <div class="about_top_flex">
+         <hr>
+         <div class="about_about"><h1>МУЗИКА</h1></div>
+         <hr>
+     </div>
+        <!--Верхній блок-->
+         <p class="news article">ОСТАННІ ВІДЕО</p>
+     <!--Блок з відео youtube-віджетами-->
+    <div class="music_videos">
+        <div class="player"><iframe  src="https://www.youtube.com/embed/kHpWUTCAR4I"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The Raconteurs - Sunday Driver</p></div>
+        <div class="player"><iframe  src="https://www.youtube.com/embed/WFaozNKOdLk"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>The Raconteurs - Now That You're Gone</p></div>
+        <div class="player">
+                <iframe  src="https://www.youtube.com/embed/DXAidGQUuns"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>The Raconteurs - Steady as she goes</p>
+        </div>
+    </div>
+    <!--Флекс-блок для нижньої частини контенту-->
+    <div class="music_music">
+        <!--Лівий блок з віджетами-->
+        <div class="music_popular">
+         
+           <p class="news article">ПОПУЛЯРНЕ</p>
+            <iframe allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/105985553&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/530061810&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/38503909&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <!--Правий блок з віджетами-->
+        <div class="music_also">
+           
+            <p class="news article">ІНШІ ТРЕКИ</p>
+            <iframe   allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50570318&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe  allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50570314&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe   allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50570317&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+   </div>
+   </div>
+    </main>
+    <!--Футер з навігацією-->
+   <footer>
+      <!--Обмежувач-контейнер-->
+       <div class="container">
+          <!--Горизонтальна обмежуюча лінія-->
+           <hr class="footer hr">
+           <!--Контейнер для футер флекса-->
+           <div class="footer flex">
+           <!--Назва сайту в кінці-->
+           <div  class="fname"><p>The Raconteurs</p></div>
+           <!--Футер-меню з навігацією-->
+            <nav class="footer menu">
+        <a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a>
+        <a class="link" href="about.html">ПРО ГУРТ</a>
+        <a class="link" href="gallery.html">ГАЛЕРЕЯ</a>
+        <a class="link" href="music.html">МУЗИКА</a>
+    </nav>
+           </div>
+           <hr class="footer hr">
+           <!--Моє ім'я( того хто створив сайт)-->
+           <div id="outro">© 2019 " The Raconteurs", студент групи ІТ-21, Ломовацький Антон</div>
+       </div>
+   </footer>
+   <!--Під'єдную jQuery-->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+   <!--Під'єдную свій js-файл -->
+   <script src="js/main.js" defer></script>
+   
+</body>
+</html>

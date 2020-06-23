@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Raconteurs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="img/x-icon" href="./img/icons/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<!------------------ Header-------------------->
+  <header>
+  <div class="container">
+  <div class="header top">
+   <div class="header logo">
+        <a href="index.html"><img  src="./img/icons/logo.png" alt="Raconteurs" ></a>
+    </div>
+    <div id="header_name">
+        <h1>The Raconteurs</h1>
+    </div>
+    </div>  
+    <!-----------------------------Menu---------------------- -->
+    <input type="checkbox" id="menu-checkbox">
+    <nav role="navigation">
+      <label for="menu-checkbox" class="toggle-button" data-open = "Меню" data-close = "Закрити" onclick></label>
+       <ul class="header menu"  id="header_menu">
+       <li><a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a></li>
+       <li><a class="link" href="about.html">ПРО ГУРТ</a></li>
+       <li><a class="link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+       <li><a class="link" href="music.html">МУЗИКА</a></li>
+       </ul>
+    </nav>
+    </div>
+    </header>
+    <!------------------------------- Main part---------------------- -->
+    <main>
+    <div class="container">
+    <!--Назва сторінки-->
+     <div class="about_top_flex">
+         <hr>
+         <div class="about_about"><h1>ПРО ГУРТ</h1></div>
+         <hr>
+     </div>
+     <!----------------------------Фото гурту-------------------->
+     <div class="image_about"><img src="./img/about.jpg" alt="about"></div>
+     <!--------------------Контент(текст та мапа) для флексу------------->
+     <div class="about_content">
+        <!------------------Основний текст------------------->
+         <div class="about_text"><p>The Raconteurs - американська супергрупа , що складається з музикантів The White Stripes і The Greenhornes , а також сольного виконавця Брендана Бенсона.
+Історія групи почалася з імпровізованої запису пісні « Steady, As She Goes », яка мала грандіозний успіх і була визнана журналом « Rolling Stone » другою кращою піснею 2006 року. Кліп до неї зняв культовий режисер Джим Джармуш .
+Гурт родом з Нашвіллу . Згідно з офіційним сайтом групи, "Почалося все на горищі в середині спекотного літа, коли Джек Уайт і Брендан Бенсон зібралися разом і написали пісню, яка реально порадувала їх. Це була пісня ' Steady, As She Goes ', і це натхнення спонукало їх створити повноцінну групу за участю Лоуренса із The Killers. " Група зібралася разом в Детройті в 2005 році. Завдяки особистому успіху окремих учасників колективу, їх відразу охрестили супергрупою . Але самі учасники групи з цим терміном не погоджуються, для них супергрупа це явище заздалегідь заплановане і тимчасове, а вони фактично "нова група старих друзів"</p></div>
+   <!-----------------------------Гугл мапа---------------------------->
+    <div class="about_widgets">
+        <div id="map"></div><div id="pano"></div></div>
+    
+     </div>
+         <div class="about_top_flex">
+         <hr>
+         <div class="about_about"><h1>ШУКАЙТЕ ТУТ</h1></div>
+         <hr>
+     </div>
+     <!----------------------Посилання на соц. сторінки------------------------>
+        <ul class="socialIcons">
+  <li><a class="facebook" href="https://www.facebook.com/theraconteurs/"><i class="fa fa-facebook"></i></a></li>
+  <li><a class="twitter" href="https://twitter.com/raconteursmusic"><i class="fa fa-twitter"></i></a></li>
+  <li><a class="instagram" href="https://www.instagram.com/theraconteurs/"><i class="fa fa-instagram"></i></a></li>
+  <li><a class="youtube" href="https://www.youtube.com/channel/UCjBx6KBHflf2jTkPuNLLt9Q"><i class="fa fa-youtube"></i></a></li>
+</ul>
+     
+      </div>
+    </main>
+    <!------------------------------ Footer ----------------------->
+   <footer>
+       <div class="container">
+           <hr class="footer hr">
+           <div class="footer flex">
+           <div  class="fname"><p>The Raconteurs</p></div>
+            <nav class="footer menu">
+        <a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a>
+        <a class="link" href="about.html">ПРО ГУРТ</a>
+        <a class="link" href="gallery.html">ГАЛЕРЕЯ</a>
+        <a class="link" href="music.html">МУЗИКА</a>
+    </nav>
+           </div>
+           <hr class="footer hr">
+           <div id="outro">© 2019 " The Raconteurs", студент групи ІТ-21, Ломовацький Антон</div>
+       </div>
+   </footer>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+   <script src="js/main.js" defer></script>
+   <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpSy0aTwqC4JjVRlTooO5O4k5SNSu_ow4&callback=initialize" async defer>
+    </script>
+</body>
+</html>

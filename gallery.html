@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <!--Під'єдную кодування-->
+    <meta charset="UTF-8">
+    <!--Назва сторінки-->
+    <title>Raconteurs</title>
+    <!--Під'єдную CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Встановлюю іконку сайту-->
+    <link rel="shortcut icon" type="img/x-icon" href="./img/icons/favicon.ico">
+    <!--Адаптую сайт-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<!--Хедер-->
+  <header>
+  <!--Блок що обмежує все в центрі-->
+  <div class="container">
+  <!--Блок для лого та назви сайту-->
+  <div class="header top">
+  <!--Лого-->
+   <div class="header logo">
+        <a href="index.html"><img  src="./img/icons/logo.png" alt="Raconteurs" ></a>
+    </div>
+    <!--Назва сайту-->
+    <div id="header_name">
+        <h1>The Raconteurs</h1>
+    </div>
+    </div>  
+    <!-- Меню -->
+    <!--Чекбокс для адаптації випадаючого меню моб. версії-->
+    <input type="checkbox" id="menu-checkbox">
+    <!--Блок з меню-->
+    <nav role="navigation">
+     <!--Випадаючий блок-->
+     <label for="menu-checkbox" class="toggle-button" data-open = "Меню" data-close = "Закрити" onclick></label>
+       <ul class="header menu"  id="header_menu">
+       <li><a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a></li>
+       <li><a class="link" href="about.html">ПРО ГУРТ</a></li>
+       <li><a class="link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+       <li><a class="link" href="music.html">МУЗИКА</a></li>
+       </ul>
+    </nav>
+    </div>
+    </header>
+    <!--Головна частина -->
+    <main>
+   <div class="container">
+     <!--Назва сторінки-->
+      <div class="about_top_flex">
+         <hr>
+         <div class="about_about"><h1>ГАЛЕРЕЯ</h1></div>
+         <hr>
+     </div>
+      <!--Слайдер-галерея-->
+      <div id="block-for-slider">
+        <div id="viewport2">
+            <ul id="slidewrapper2">
+                <li class="slide"><img src="./img/gallery/1.jpg" alt="1" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/2.jpg" alt="2" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/3.jpg" alt="3" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/4.jpg" alt="4" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/5.jpg" alt="5" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/6.jpg" alt="6" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/7.jpg" alt="7" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/8.jpg" alt="8" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/9.jpg" alt="9" class="slide-img"></li>
+                <li class="slide"><img src="./img/gallery/10.jpg" alt="10" class="slide-img"></li>
+            </ul>
+
+            <div id="prev-next-btns">
+                <div id="prev-btn"></div>
+                <div id="next-btn"></div>
+            </div>
+
+            <ul id="nav-btns">
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+            </ul>
+        </div>
+    </div>
+   </div>
+    </main>
+    <!--Футер з навігацією-->
+   <footer>
+      <!--Обмежувач-контейнер-->
+       <div class="container">
+          <!--Горизонтальна обмежуюча лінія-->
+           <hr class="footer hr">
+           <!--Контейнер для футер флекса-->
+           <div class="footer flex">
+           <!--Назва сайту в кінці-->
+           <div  class="fname"><p>The Raconteurs</p></div>
+           <!--Футер-меню з навігацією-->
+            <nav class="footer menu">
+        <a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a>
+        <a class="link" href="about.html">ПРО ГУРТ</a>
+        <a class="link" href="gallery.html">ГАЛЕРЕЯ</a>
+        <a class="link" href="music.html">МУЗИКА</a>
+    </nav>
+           </div>
+           <hr class="footer hr">
+           <!--Моє ім'я( того хто створив сайт)-->
+           <div id="outro">© 2019 " The Raconteurs", студент групи ІТ-21, Ломовацький Антон</div>
+       </div>
+   </footer>
+   <!--Під'єдную jQuery-->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+   <!--Під'єдную свій js-файл -->
+   <script src="js/galleryslide.js" defer></script>
+   
+</body>
+</html>

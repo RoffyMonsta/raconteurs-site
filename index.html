@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <!--Під'єдную кодування-->
+    <meta charset="UTF-8">
+    <!--Назва сторінки-->
+    <title>Raconteurs</title>
+    <!--Під'єдную CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Встановлюю іконку сайту-->
+    <link rel="shortcut icon" type="img/x-icon" href="./img/icons/favicon.ico">
+    <!--Адаптую сайт-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<!--Хедер-->
+  <header>
+  <!--Блок що обмежує все в центрі-->
+  <div class="container">
+  <!--Блок для лого та назви сайту-->
+  <div class="header top">
+  <!--Лого-->
+   <div class="header logo">
+        <a href="index.html"><img  src="./img/icons/logo.png" alt="Raconteurs" ></a>
+    </div>
+    <!--Назва сайту-->
+    <div id="header_name">
+        <h1>The Raconteurs</h1>
+    </div>
+    </div>  
+    <!-- Меню -->
+    <!--Чекбокс для адаптації випадаючого меню моб. версії-->
+    <input type="checkbox" id="menu-checkbox">
+    <!--Блок з меню-->
+    <nav role="navigation">
+     <!--Випадаючий блок-->
+     <label for="menu-checkbox" class="toggle-button" data-open = "Меню" data-close = "Закрити" onclick></label>
+       <ul class="header menu"  id="header_menu">
+       <li><a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a></li>
+       <li><a class="link" href="about.html">ПРО ГУРТ</a></li>
+       <li><a class="link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+       <li><a class="link" href="music.html">МУЗИКА</a></li>
+       </ul>
+    </nav>
+    </div>
+    </header>
+    <!--Головна частина -->
+    <main>
+    <!--Обмежувач контенту-->
+    <div class="container">
+        <!--Слайдер-->
+     <div id="blockfor-slider">
+<ul id="slides">
+    <li class="slide1 showing"></li>
+    <li class="slide1"></li>
+    <li class="slide1"></li>
+    <li class="slide1"></li>
+    
+</ul>
+    </div>
+<!--Флекс контейнер -->
+<div class="mflex">
+   <!--Блок з віджетом музики та текстом-->
+    <div class="content">
+    <!-- Soundcloud-віджети -->
+    <div class="soundcloud">
+        <iframe   allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/549869550&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<iframe     allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/110234055&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+    <!-- Новини -->
+    <div class="news">
+       <!--Оголошення новин-->
+        <p class="news article">Новини</p>
+        <!--Блок з статтею-->
+        <div class="title">
+        <!--Назва статті-->
+        <p class="news name">27 лютого: Raconteurs повертаються до гастролей з шоу у Новій Зеландії в квітні.</p>
+        <!--Основний блок тексту-->
+        <p class="news text">
+Raconteurs возз'єднуються - і вони виступають вперше з 2011 року в Новій Зеландії.
+
+Фронтмен Джек Уайт, з Бренданом Бенсоном, Джеком Лоуренсом і Патріком Кілером на борту, The Raconteurs випустили два альбоми: Broken Boy Soldiers в 2006 році, і Consolers of Lonely у 2008 році.
+
+Вони перестали виступати разом у 2011 році, але минулого року випустили новий сингл у Sunday Driver з нового альбому, запланованого до випуску цього року.
+        </p>
+        <!--Обмежуюча горизонтальна лінія-->
+        <hr class="news hr">
+        </div>
+        <!--Друга стаття-->
+         <div class="title">
+        <p class="news name">26 лютого : RACONTEURS , DEATH GRIPS ДОДАНІ ДО BEST KEPT SECRET2019</p>
+        <p class="news text">Raconteurs очолює список з 40 учасників, доданих до фестивалю Best Kept Secret сьогодні.
+
+Голландська подія проходить в період з 31 травня по 2 червня в селі Хілваренбек.
+
+Death Grips , Софі , Торо Y Moi, Spiritualized і LIFE також серед актів, доданих до законопроекту, який вже може похвалитися іменами, включаючи Бон Івер, Крістін і Квінс, Kraftwerk, Mac DeMarco і Інтерпол.
+
+Очікується, що Raconteurs випустять новий альбом у 2019 році, їх перший з 2008 року "Consolers of the Lonely" .</p>
+   <hr class="news hr">
+        </div>
+        <!--Треття стаття-->
+         <div class="title">
+   <p class="news name">19 грудня : Джек Уайт представив дві нові пісні групи The Raconteurs</p>
+   <p class="news text">Джек Уайт випустив дві нові пісні в складі The Raconteurs - «Sunday Driver» і «Now That You're Gone». Група повернулася в лад після десятирічної перерви. Останні на сьогодні концерти The Raconteurs відбулися трохи пізніше - в 2011 році.
+
+Нові треки увійдуть до третього альбому команди, реліз якого призначено на 2019 рік. Про те, що музиканти працюють над новим матеріалом, стало відомо в жовтні. Подробиць про новий альбом поки не повідомлялося - назва, дата релізу і трекліст поки залишаються в секреті.</p>
+  </div>
+  <!--Посилання на попередні новини-->
+   <div class="news article" ><a href="#home"  class="link">попередні новини>>></a></div>
+    
+        </div>
+    </div>
+    
+<!--Віджет з квитками -->
+    <div class="main tickets"><script  src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="The Raconteurs" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="true" data-text-color="#f5fc25" data-link-color="#00b4b3" data-background-color="rgba(245,252,37,0)" data-display-limit="5" data-link-text-color="#f5fc25" data-display-lineup="false" data-separator-color="#f5fc25" ></a></div>
+</div>
+    </div>
+    </main>
+    <!--Футер з навігацією-->
+   <footer>
+      <!--Обмежувач-контейнер-->
+       <div class="container">
+          <!--Горизонтальна обмежуюча лінія-->
+           <hr class="footer hr">
+           <!--Контейнер для футер флекса-->
+           <div class="footer flex">
+           <!--Назва сайту в кінці-->
+           <div  class="fname"><p>The Raconteurs</p></div>
+           <!--Футер-меню з навігацією-->
+            <nav class="footer menu">
+        <a class="link" href="index.html">ГОЛОВНА СТОРІНКА</a>
+        <a class="link" href="about.html">ПРО ГУРТ</a>
+        <a class="link" href="gallery.html">ГАЛЕРЕЯ</a>
+        <a class="link" href="music.html">МУЗИКА</a>
+    </nav>
+           </div>
+           <hr class="footer hr">
+           <!--Моє ім'я( того хто створив сайт)-->
+           <div id="outro">© 2019 " The Raconteurs", студент групи ІТ-21, Ломовацький Антон</div>
+       </div>
+   </footer>
+   <!--Під'єдную jQuery-->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+   <!--Під'єдную свій js-файл -->
+   <script src="./js/main.js" defer></script>
+   
+</body>
+</html>
